@@ -1,0 +1,66 @@
+.guest-container{
+    overflow:auto;
+}
+
+.guest-title{
+    padding: 10px;
+    display: flex;
+    background-color: rgb(233, 233, 233);
+    font-size: 13px;
+    margin: 10px;
+    align-items: center;
+    font-family: 'MapoGoldenPier'
+}
+
+.guest-title-date{
+    font-size: 11px;
+    font-family: 'MapoGoldenPier'
+}
+
+.guest-text{
+    width: 80%;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: 'MapoGoldenPier'
+}
+.guest-book-container{
+    display:flex;
+    flex-direction:row;
+    height: 150px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+
+}
+
+.guest-book-picture{
+    flex: 1.5;
+    margin-left: 10px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guest-book-picture > img {
+    width: 50%;
+  }
+.background1{
+    background-image: url("./images/background1.png");
+}
+.background2{
+    background-image: url("./images/background2.jpeg");
+}
+.background3{
+    background-image: url("./images/background3.jpeg");
+}
+.guest-book-text{
+    flex: 3;
+    font-size: 13px;
+    margin-right:10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'MapoGoldenPier';
+
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2021 MINI HOMEPAGE</title>
+    <link rel="stylesheet" href="./static/font.css" />
+    <link rel="stylesheet" href="./static/layout.css" />
+    <link rel="stylesheet" href="./static/home.css" />
+    <link rel="stylesheet" href="./static/diary.css" />
+    <script src="https://kit.fontawesome.com/133760b22f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="bookcover">
+      <div class="bookdot">
+        <div class="page">
+          <div class="container">
+            <!--프로필-->
+            <div class="column1">
+              <div class ="row1">
+                <center>
+                  <span class="font-top" >TODAY <span style="color: red;">12</span> | TOTAL 20345</span>
+                </center>
+              </div>
+              <div class="row2 border-gray">
+                <div class="profile-picture">  
+                  <img src="./static/images/profile.jpg" width= "130" height ="150" alt="프로필 사진"/>
+                </div>
+                <div class="profile-text"> 안녕 .. <br> 짐인님의 추억8282 <br>만나서 반갑..</div>
+                <div class="profile-dropdown">
+                  <div class="dropdown-btn">
+                    <div class="dropdown-title">파도타기</div>
+                    <div class="triangle-down"></div>
+                  </div>
+               
+                  <div class="dropdown-content">
+                    <a href="https://www.instagram.com" target="_blank">인스타로 가기</a>
+                    <a href="https://blog.naver.com/dkdldsla0000" target="_blank">블로그로 가기</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <!--미니홈피-->
+            <div class="column2">
+              <!--title-->
+              <div class ="row1"> 
+                <span class="font-top-change">짐인님의 추억 82</span>
+                <span class="font-top" style="margin-left: 170px;">https://jimin/mini-homepage</span>
+              </div>
+            
+              <div class="row2 border-gray flow">
+                  <div class="date-box"> 
+                      <div class="today">3.31<br />WED</div>
+                      <div class="date-list">
+                          <div class="date">1</div>
+                          <div class="date">2</div>
+                          <div class="date">3</div>
+                          <div class="date">4</div>
+                          <div class="date">5</div>
+                          <div class="date color-blue">6</div>
+                          <div class="date color-red">7</div>
+                          <div class="date">8</div>
+                          <div class="date">9</div>
+                          <div class="date">10</div>
+                          <div class="date">11</div>
+                          <div class="date">12</div>
+                          <div class="date color-blue">13</div>
+                          <div class="date color-red">14</div>
+                          <div class="date">15</div>
+                          <div class="date">16</div>
+                          <div class="date">17</div>
+                          <div class="date">18</div>
+                          <div class="date">19</div>
+                          <div class="date color-blue">20</div>
+                          <div class="date color-red">21</div>
+                          <div class="date">22</div>
+                          <div class="date">23</div>
+                          <div class="date">24</div>
+                          <div class="date">25</div>
+                          <div class="date">26</div>
+                          <div class="date color-blue">27</div>
+                          <div class="date color-red">28</div>
+                          <div class="date">29</div>
+                          <div class="date">30</div>
+                          <div class="date">31</div>
+                        </div>
+                  </div>
+                
+                  <div class="diary-container">
+                    <div class="diary-box"> 
+                        <div class="date-font">2021.01.01 금 01:23 </div>
+                        <div class="diary-contents">안녕 얘드라 <br> 짐인님의 미니홈피에 온걸 <br> 환영해 </div>
+                     </div>
+                     <div class="diary-box"> 
+                        <div class="date-font">2020.10.19 월 01:23 </div>
+                        <div class="diary-contents">난 ㄱㅏ끔 <br> 눈물을 흘린다.. <br> ㄱ ㅏ끔은 눈물을 참을 수 없는 ㄴㅐ가.. 별루다 ..<br> 맘이 ㅇㅏㅍㅏ서..<br>소리 치며.. 울 수 있ㄷㅏ는건 ..<br>좋은 ㄱ ㅓ야.. </div>
+                     </div> 
+                     <div class="diary-box"> 
+                        <div class="date-font">2020.02.24 월 01:22 </div>
+                        <div class="diary-contents"> 오늘은 한빈이 생일 .. 🎂 <br> 생일 축하해 🎉 그리고 .. 앞으로 <br>  울ㅈㅣ않기 <br>억ㅈ ㅣ로라도 웃기 <br>ㄴㅏ랑 약속해 ..</div>
+                     </div> 
+                     
+                    <button onclick= "getTextFile()"><i class="fas fa-lock" ></i> 짐인님의 비밀일기 보기</button>
+                    <div class="diary-box" id="secret-box">
+                      <div class="date-font">짐인님의 비밀일기</div>
+                      <div class="diary-contents" id="secret-contents"></div>
+                    </div>
+                  </div>
+                
+              </div>
+
+            </div>  
+            <!--메뉴-->
+            <div class="column3">
+              <div class="row1"> </div>
+              <div class="category-container">
+                <div class="category-custom"> <a href="./home.html"> 홈 </a> </div>
+                <div class="category-custom"> <a href="./diary.html"> 다이어리 </a> </div>
+                <div class="category-custom"> <a href="./photo.html"> 사진첩 </a> </div>
+                <div class="category-custom"> <a href="#"> 방명록 </a> </div>
+  
+              </div>
+              
+              
+            </div>
+
+          </div>        
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function getTextFile(){
+        var input = document.createElement("input");
+        input.type = "file";
+        input.accept ="text/plain";
+        input.onchange = function (event) {
+          processFile(event.target.files[0]);
+        };
+        input.click();
+      }
+      function processFile(file) {
+        var reader = new FileReader();
+        reader.readAsText(file,"UTF-8");
+        reader.onload = function(){
+          document.getElementById("secret-contents").innerText = reader.result;
+          document.getElementById("secret-box").style.display = "block";
+        };
+      }
+      </script>
+  </body>
+</html>

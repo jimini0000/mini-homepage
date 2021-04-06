@@ -1,0 +1,236 @@
+.container{
+    display: flex;
+    flex-direction:row;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    bottom: 12px;
+    right: 12px;
+}
+/*프로필*/
+.column1{
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    margin-right: 15px;
+}
+
+.profile-picture{
+    flex: 1;  
+    margin: auto;
+    background-size: contain;
+    margin-top: 30px;
+}
+
+.profile-text{
+    padding-top: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 12px;
+    flex: 2;
+    font-family: 'MapoGoldenPier';
+    
+}
+.profile-undertext{
+    flex: 0.4;
+    
+}
+
+.row1{
+    flex:0.18;
+    margin-top: 8px;
+   
+}
+.row2{
+    flex:2.5;
+    border-radius: 9px;
+    background-color: white;
+    display: flex;
+    flex-direction:column;
+    margin-left: 5px;
+}
+
+.title-box{
+    flex:0.12;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color:  #2d91c0;
+    font-family: 'Y_Spotlight';
+}
+
+.line{
+    margin-left: 10px;
+    margin-right: 5px;
+    border-bottom: 1px solid black;
+}
+
+/*미니룸*/
+.column2{
+    flex: 2.3;
+    margin-left: 10px;
+    display: flex;
+    flex-direction:column;
+}
+
+.contents{
+    margin-left: 10px;
+    margin-right: 10px;
+    flex:0.5;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    width: 40px;
+    height: fit-content;
+    color:white;
+    border-radius: 2px;
+    font-size: 11px;
+    text-align: center;
+    padding: 1.2px;
+    margin-right: 5px;
+    display: inline-block;
+}
+.news-font{
+    flex: 1;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'MapoGoldenPier'
+
+}
+
+#album-icon {
+    background-color: #F15F5F;
+}
+
+#board-icon {
+    background-color: #617DC1;
+}
+
+.miniroom{
+    flex:1.5; 
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b0e1ff; 
+}
+.miniroom-gif{
+    width: 50%;
+    height: 50%;
+    
+}
+.contents-news{
+    flex:1;
+}
+.number-font{
+    font-size: 10px;
+    color: rgb(57, 57, 201);
+    font-weight: bolder;
+}
+.contents-diary{
+    flex:1;
+}
+
+.border-gray{
+    border: 1.2px solid rgb(211, 210, 210);
+}
+.font-top{
+    font-size: 13px;
+    font-weight:normal;
+}
+.font-top-change{
+    font-size: 13px;
+    font-family: 'MapoGoldenPier'
+}
+
+.menu-row {
+    display: flex;
+    border-bottom: 1px dashed grey;
+    margin: 3px 0;
+  }
+
+  /*메뉴*/
+.column3{
+    flex: 0.5;
+    display: flex;
+    flex-direction:column;
+}
+
+.category-container{
+    flex:2;
+    display: flex;
+    flex-direction:column;
+}
+
+.category-custom{
+    border-radius: 0 5px 5px 0;
+    margin-top: 10px;
+    padding: 5px;
+    width: 60%;
+    background-color:#2d91c0 ;
+    
+}
+
+.category-custom:hover{
+    background-color: #1e85b4 ;
+    cursor: pointer;
+}
+
+.category-custom>a{
+    text-decoration:none !important;
+    color: white;
+    font-family: 'Y_Spotlight';
+    font-size: 11px;
+}
+
+/*파도타기*/
+.profile-dropdown {
+  flex: 0;
+  border: 1px solid #c9d4da;
+  padding: 5px;
+  margin: 10px;
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 4.5px solid transparent;
+  border-right: 4.5px solid transparent;
+  border-top: 5px solid #838383;
+}
+
+.dropdown-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.profile-dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+.dropdown-content > a {
+  display: block;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 6px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-content > a:hover {
+  background-color: #f1f1f1;
+}
